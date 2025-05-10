@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 
 app.use("/api/users", userRoutes);
-
-app.listen(process.env.PORT, () => {
-  console.log(`Server running at http://localhost:${process.env.PORT}/`);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
 });

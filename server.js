@@ -1,12 +1,15 @@
 const express = require("express");
+const connectDB = require("./config/db");
+const userRoutes = require("./routes/userRoutes");
+const dotenv = require("dotenv");
 
 const app = express();
-const port = 3000;
+app.use(express.json());
+dotenv.config();
+connectDB();
 
-app.get("/", (req, res) => {
-  res.send("<h3>Hello, World!<h3>");
-});
+app.use("/api/users", userRoutes);
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server running at http://localhost:${process.env.PORT}/`);
 });

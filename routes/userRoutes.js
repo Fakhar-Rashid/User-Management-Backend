@@ -73,9 +73,6 @@ router.patch("/bulk/update", bulkUpdateUsers);
 //  Replace user (replaceOne)
 router.put("/:id/replace", replaceUser);
 
-//  Delete user (deleteOne)
-router.delete("/:id", deleteUser);
-
 //  Bulk delete users (deleteMany)
 router.delete("/bulk/delete", bulkDeleteUsers);
 
@@ -102,5 +99,8 @@ router.post("/collection/rename", renameCollection);
 
 //  Drop collection (drop)
 router.delete("/collection/drop", dropCollection);
+
+//  Delete user (deleteOne)
+router.delete("/:id", deleteUser);
 
 module.exports = router;

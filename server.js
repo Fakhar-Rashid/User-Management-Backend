@@ -4,15 +4,17 @@ const userRoutes = require("./routes/userRoutes");
 const dotenv = require("dotenv");
 
 const app = express();
+const PORT = process.env.PORT || 8080;
+
 app.use(express.json());
 dotenv.config();
 connectDB();
 
+app.use("/api/users", userRoutes);
 app.use("/", (req, res) => {
   res.json("<h3>Hello</h3>");
 });
-app.use("/api/users", userRoutes);
-const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });

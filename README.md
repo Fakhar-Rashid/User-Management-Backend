@@ -1,10 +1,7 @@
 
 # User Management Backend
 
-[![Node.js](https://img.shields.io/badge/node.js-v18.x-green?logo=node.js)](https://nodejs.org/)  
-[![Express](https://img.shields.io/badge/express-4.x-lightgrey?logo=express)](https://expressjs.com/)  
-[![MongoDB](https://img.shields.io/badge/mongodb-6.x-green?logo=mongodb)](https://www.mongodb.com/)  
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node.js-v18.x-green?logo=node.js)](https://nodejs.org/)  [![Express](https://img.shields.io/badge/express-4.x-lightgrey?logo=express)](https://expressjs.com/)  [![MongoDB](https://img.shields.io/badge/mongodb-6.x-green?logo=mongodb)](https://www.mongodb.com/)  [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ---
 
